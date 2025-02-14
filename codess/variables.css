@@ -1,0 +1,27 @@
+:root {
+    --color1: #ff6b81;
+    --color2: #ffebee;
+    --no-button: #ff4757;
+    --dark-bg: rgb(15, 8, 15);
+    --light-bg: #efdbfc;
+    --cont-bg: #ccc;
+    --font-family: 'Indie Flower', cursive;
+    --box-shadow: rgba(255, 107, 129, 0.5);
+    --white: #ffffff;
+    --cont-dark-bg: rgba(12, 8, 12, 0.568);
+    --color-red: #ff0000;
+    --color-black: #000000;
+    --login-btn-bg-1: #b35fd4ce;
+    --login-btn-bg-2: #b700ffea;
+    --login-btn-box-shadow: #5b1079ea;
+    --login-color-gray: #333;
+    --login-input-color: #aaa;
+    --login-input-border: #b35fd4ce;
+    --color-env: #FFB7C5;
+    --color-env2: #ff9aad;
+    --color-flap: #ff8da1;
+    --color-bg: #fff5f7;
+    --color-heart: #ff85a2;
+    --color-sparkle: #fff;
+    --wax-red: #c04040;
+}
