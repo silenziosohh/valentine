@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <link rel="stylesheet" href="script.css">
+    <title>Bacini tattici?</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    
+    <div class="container">
+        <h1 class="header_text">Mi dai <span id="randomNumber"></span> bacini?</h1>
+
+        <hr class="line">
+
+        <div class="gif_container">
+            <img src="https://media.tenor.com/BwdQJsZmJdcAAAAi/psybirdb1oom.gif" alt="Cute Capoo GIF">
+        </div>
+
+        <hr class="line">
+
+        <div class="buttons_x">
+            <button class="btn" id="yesButton" onclick="nextPage()">Si</button>
+            <button class="btn" id="noButton">No</button>
+        </div>
+
+        <div class="buttons">
+            <a href="../index.html"><button class="btn">🏠 Home</button></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+    <script src="../change_theme.js"></script>
+    <script src="../animation.js"></script>
+    <script src="../functions.js"></script>
+    <script>
+        function generateRandomNumber() {
+            let min = 100000;
+            let max = 100000000000;
+            let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+
+            localStorage.setItem("randomNumber", randomNum);
+
+            document.getElementById("randomNumber").textContent = randomNum;
+        }
+        generateRandomNumber();
+    </script>
+
+</body></html>
