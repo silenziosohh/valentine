@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./script.css">
+        <title>Grazie!</title>
+    </head> 
+    <body>
+        <canvas id="canvas"></canvas>
+        
+        <div class="container">
+            <div>
+                <h1 class="header_text">Grazie per i <span id="randomNumber"></span> baciniiiiii! 😘</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media.tenor.com/BwdQJsZmJdcAAAAi/psybirdb1oom.gif">
+            </div>
+
+            <hr class="line">
+
+            <div class="home">
+                <a href="../index.html"><button class="btn">🏠 Home</button></a>
+            </div>
+        </div>
+        
+        <script src="../change_theme.js"></script>
+        <script src="../animation.js"></script>
+        <script src="../functions.js"></script>
+
+        <script>
+            window.onload = function() {
+                let randomNum = localStorage.getItem("randomNumber");
+
+                if (randomNum) {
+                    document.getElementById("randomNumber").textContent = randomNum;
+                } else {
+                    document.getElementById("randomNumber").textContent = "tanti";
+                }
+            };
+        </script>
+
+    </body> 
+</html>
