@@ -1,0 +1,103 @@
+@import url(../variables.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--light-bg);
+    font-family: 'Indie Flower', cursive;
+    overflow: hidden;
+}
+
+.dark-mode {
+    background-color: var(--dark-bg);
+}
+
+.container {
+    text-align: center;
+    background-color: var(--color2);
+    padding: 40px;
+    border-radius: 20px;
+    border: 3px solid var(--color1);
+    box-shadow: 0 8px 20px var(--box-shadow);
+    max-width: 400px;
+    width: 90%;
+}
+
+.line {
+    border: none;
+    height: 2px;
+    background-color: var(--color1);
+    margin: 20px 0;
+}
+
+.header_text {
+    font-size: 36px;
+    color: var(--color1);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px var(--box-shadow);
+}
+
+.gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.home {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 20px;
+    border: 2px solid var(--color1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: var(--color1);
+    color: var(--white);
+    font-family: 'Indie Flower', cursive;
+    box-shadow: 0 4px 10px var(--box-shadow);
+}
+  
+.btn:hover {
+    background-color: var(--white);
+    color: var(--color1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px var(--box-shadow);
+}
+  
+#noButton {
+    background-color: var(--no-button);
+    border-color: var(--no-button);
+}
+  
+#noButton:hover {
+    background-color: var(--white);
+    color: var(--no-button);
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(4px);
+}
